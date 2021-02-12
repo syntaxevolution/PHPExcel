@@ -1384,7 +1384,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
         $record   = 0x007D;          // Record identifier
         $length   = 0x000C;          // Number of bytes to follow
 
-        $coldx   *= 256;             // Convert to units of 1/256 of a char
+        $coldx   = 256;             // Convert to units of 1/256 of a char
 
         $ixfe     = $xfIndex;
         $reserved = 0x0000;            // Reserved
